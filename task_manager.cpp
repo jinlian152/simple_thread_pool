@@ -1,5 +1,4 @@
 #include "task_manager.h"
-namespace map {
 
 int Worker::sleep_count_ = 0;
 
@@ -141,6 +140,4 @@ void WaitTasks(const std::vector<RUNNABLE_PTR>& tasks, int timeout_ms) {
     ParallelTasksRunner async_tasks;
     async_tasks.AddTasks(tasks);
     async_tasks.Wait(timeout_ms);
-}
-
 }
