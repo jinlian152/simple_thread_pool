@@ -14,8 +14,6 @@
 #include <map>
 #include <mutex>
 
-namespace map {
-
 extern const int g_default_worker_count;
 
 class Runnable {
@@ -208,7 +206,5 @@ private:
 };
 
 void WaitTasks(const std::vector<RUNNABLE_PTR>& tasks, int timeout_ms);
-
-}
 
 #endif
